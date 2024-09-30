@@ -1,0 +1,133 @@
+body {
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Press Start 2P', cursive; 
+    background-color: #b4dec3; 
+}
+
+#gameContainer {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    margin-top: 20px;
+    
+}
+
+#gameCanvas {
+
+    justify-content: center; 
+
+    margin-left: 50px;
+    
+}
+
+#controls {
+    display: flex;
+    flex-direction: column; 
+    margin-left: 20px; 
+}
+
+#instructions {
+
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px; 
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+}
+
+#gameTitle {
+    font-size: 36px; 
+    color: rgb(2, 165, 4); 
+    margin-bottom: 20px;
+}
+
+#levelSelection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#levelSelection button {
+    margin: 10px 0; 
+}
+
+canvas {
+    
+    border: 1px solid black;
+    background-image: url('images/background.jpg'); 
+    background-size: cover; 
+}
+
+#leaderboard {
+    margin-top: 20px;
+}
+
+#gameOver {
+    margin-top: 20px;
+}
+
+#score {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+#startGameBtn{
+    margin-left: 10px;
+    margin-top: 563px;
+}
+
+button{
+    background-color: rgb(2, 165, 4);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+input {
+    border: balck;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: rgb(1, 120, 3); 
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95); 
+}
+
+#leaderboard h3 {
+    margin-bottom: 10px;
+}
+
+#leaderboard ul {
+    list-style-type: none;
+    padding: 0; 
+}
+
+#leaderboard ul li {
+    background-color: rgb(145, 202, 145); 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px; 
+    transition: transform 0.2s;
+}
+
+#leaderboard ul li:hover {
+    transform: scale(1.05); 
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game with Leaderboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1 id="gameTitle">Snake Game</h1>
+    <div id="gameContainer">
+        <div id="levelSelection">
+            <h3>Choose Level:</h3>
+            <button id="level1Btn">Level 1</button>
+            <button id="level2Btn">Level 2</button>
+            <button id="level3Btn">Level 3</button>
+        </div>
+        
+        <canvas id="gameCanvas" width="600" height="600"></canvas>
+        <button id="startGameBtn">Start Game</button>
+        <div id="controls">
+            <div id="instructions">
+                <h3>Controls</h3>
+                <p>⇧:Up</p>
+                <p>⇩:Down</p>
+                <p>⇦:Left</p>
+                <p>⇨:Right</p>
+                <p>P:Pause</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="score">Points: 0</div>
+
+    <div id="gameOver" style="display: none;">
+        <h2>Game Over!</h2>
+        <input type="text" id="username" placeholder="Введіть своє ім'я">
+        <button id="submitScore">Save Result</button>
+    </div>
+
+    <div id="leaderboard">
+        <h3>Leaderboard</h3>
+        <ul id="leaderboardList"></ul>
+    </div>
+
+    <script src="snake.js"></script>
+</body>
+</html>
